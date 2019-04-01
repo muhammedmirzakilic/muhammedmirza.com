@@ -1,0 +1,77 @@
+#birds {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+
+
+.slogan {
+    position: absolute;
+    z-index: 999;
+    flex: 1;
+    align-items: center;
+    color: white;
+    font-size: 90px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: calc(50% - 50px);
+    font-family: monospace;
+}
+
+.social-wrapper {
+    display: flex;
+    flex-direction: column;
+    left: 10px;
+    position: fixed;
+    justify-content: center;
+    bottom: 0;
+}
+
+.social-item {
+    text-align: center;
+    padding: 10;
+    font-size: 27px;
+    color: #fff;
+}
+
+
+.icon {
+    font-family: "fontello";
+    font-style: normal;
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@media only screen and (max-width: 600px) {
+    .slogan {
+        font-size:50px;
+        left:0;
+        transform: translate(0,-50%);
+    }
+    .social-wrapper{
+        flex-direction: row;
+    }
+}
+
+
+
+@font-face {
+    font-family: SonOfAGlitch;
+    src: url('../fonts/son-of-a-glitch/SonOfAGlitch.ttf');
+}
+
+
+@font-face {
+    font-family: 'fontello';
+    src: url('../fonts/fontello/font/fontello.eot?58272855');
+    src: url('../fonts/fontello/font/fontello.eot?58272855#iefix') format('embedded-opentype'),
+        url('../fonts/fontello/font/fontello.woff?58272855') format('woff'),
+        url('../fonts/fontello/font/fontello.ttf?58272855') format('truetype'),
+        url('../fonts/fontello/font/fontello.svg?58272855#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
